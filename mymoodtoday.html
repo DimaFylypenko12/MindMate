@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">            
+<head>
+    <link rel="icon" type="image/x-icon" href="/src/iconMindMate.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+</head>
+<body class="flex h-screen">
+    <!-- Navigation part-->
+    <div id="menu-placeholder" class="w-96 h-full fixed left-0 top-0 overflow-y-auto">
+        <!-- Menu nav bar -->
+
+    </div>
+    <script src="menu.js"></script>
+   
+    <!-- Main content -->
+    <main class="sm:ml-64 md:ml-96 flex-1 bg-lime-50 overflow-y-auto p-6 space-y-8">
+        <h1 class="text-6xl font-bold text-left">MY MOOD TODAY</h1>
+
+        <h2 class="text-2xl font-bold text-left">👋 Hey there, how are you feeling today? Take a few seconds to check in with yourself. Your feelings are valid, whatever they are.</h2>
+        
+        <div class="mt-4 px-8 rounded-lg m-4 text-center text-2xl font-bold">
+                    <span id="currentDateText"></span>
+        </div>
+
+        <div id="button-group" class="text-center mt-8 space-y-8 ">
+            <button  data-label="Happy" class="emoButton transition-transform duration-150 bg-lime-300 hover:bg-lime-400 text-xl font-bold py-4 px-8 rounded-full m-4 w-48 h-18">😀 Happy</button>
+            <button  data-label="Calm" class="emoButton transition-transform duration-150 bg-lime-300 hover:bg-lime-400 text-xl font-bold py-4 px-8 rounded-full m-4 w-48 h-18">😌 Calm</button>
+            <button  data-label="Neutral" class="emoButton transition-transform duration-150 bg-lime-300 hover:bg-lime-400 text-xl font-bold py-4 px-8 rounded-full m-4 w-48 h-18">😐 Neutral</button>
+            <button  data-label="Anxious" class="emoButton transition-transform duration-150 bg-lime-300 hover:bg-lime-400 text-xl font-bold py-4 px-8 rounded-full m-4 w-48 h-18">😞 Anxious</button>
+            <button  data-label="Sad" class="emoButton transition-transform duration-150 bg-lime-300 hover:bg-lime-400 text-xl font-bold py-4 px-8 rounded-full m-4 w-48 h-18">😢 Sad</button>
+            <button  data-label="Stressed" class="emoButton transition-transform duration-150 bg-lime-300 hover:bg-lime-400 text-xl font-bold py-4 px-8 rounded-full m-4 w-48 h-18">😤 Stressed</button>
+            <button data-label="Tired" class="emoButton transition-transform duration-150 bg-lime-300 hover:bg-lime-400 text-xl font-bold py-4 px-8 rounded-full m-4 w-48 h-18">😴 Tired</button>
+        </div>
+        <div id="responseText" class="bg-lime-300 invisible text-xl font-bold py-4 px-8 rounded-lg m-4">
+            <div id="responseTextGeneral"> </div>
+            <div id="responseTextAffirmation"> </div>
+            <div id="responseTextActivitySuggestion"> </div>
+            <div id="responseTextReflectionPrompt"> </div>
+            <div id="responseTextButtonSection" class="mt-4 py-4 px-8 rounded-lg m-4 text-right">
+                <button class="px-4 py-2 rounded-lg transition bg-lime-50 text-gray-800" id="savetoJournalButton"> Save to Journal </button>
+            </div>
+                
+        </div>
+    </main>
+</body>
+    
+</html>

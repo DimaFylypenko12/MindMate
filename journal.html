@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">            
+<head>
+    <link rel="icon" type="image/x-icon" href="/src/iconMindMate.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMate</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="journalscript.js" defer></script>
+    
+</head>
+<body class="flex h-screen">
+    <!-- Navigation part-->
+    <div id="menu-placeholder" class="w-96 h-full fixed left-0 top-0 overflow-y-auto">
+        <!-- Menu nav bar -->
+
+    </div>
+    <script src="menu.js"></script>
+   
+    <!-- Main content -->
+    <main id="journalMain" class="sm:ml-64 md:ml-96 flex-1 bg-lime-50 overflow-y-auto p-6 space-y-8">
+        <h1 class="text-6xl font-bold text-left">JOURNAL</h1>
+    <div id="button-journal-group" class="text-center mt-8 space-y-8 w-full">
+            <div id="button-journal-group"
+    class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8 w-full text-center">
+
+    <button data-label="New Entry"
+        class="journalbutton flex-1 transition-transform duration-150 bg-lime-300 hover:bg-lime-400
+        text-lg sm:text-xl font-bold py-3 px-6 rounded-xl w-full max-w-xs h-12 flex items-center justify-center">
+        🖋️ New Entry
+    </button>
+
+    <button data-label="Mood History"
+        class="journalbutton flex-1 transition-transform duration-150 bg-lime-300 hover:bg-lime-400
+        text-lg sm:text-xl font-bold py-3 px-6 rounded-xl w-full max-w-xs h-12 flex items-center justify-center">
+        📅 Mood History
+    </button>
+
+    <button data-label="Reflections & Prompts"
+        class="journalbutton flex-1 transition-transform duration-150 bg-lime-300 hover:bg-lime-400
+        text-lg sm:text-xl font-bold py-3 px-6 rounded-xl w-full max-w-xs h-12 flex items-center justify-center">
+        🌸 Reflections
+    </button>
+
+</div>
+
+    </div>
+
+    <div id="newEntry" class="hidden journalMainContent flex flex-col gap-4 bg-lime-300 text-xl font-bold py-4 px-8 rounded-lg m-4">
+            <h2 class="text-2xl font-bold text-lime-800">New Entry</h2>
+            <h2 class="text-2xl font-bold text-left">🧠: “What’s one thing that’s been on your mind today?</h2>
+            <textarea id="entryText"
+            placeholder="Write your thoughts here..."
+            class="w-full h-40 p-4 rounded-xl bg-white shadow-inner border border-lime-400
+                focus:outline-none focus:ring-2 focus:ring-lime-500 focus:border-transparent
+                text-gray-800"></textarea>
+
+        <!-- Buttons -->
+            <div class="flex gap-3 justify-end">
+                <button id="clearBtn" class="px-4 py-2 rounded-lg bg-slate-50 text-black font-medium hover:bg-slate-300 active:scale-95 transition">📎</button>
+                <button id="clearBtn" class="px-4 py-2 rounded-lg bg-slate-50 text-black font-medium hover:bg-slate-300 active:scale-95 transition">Clear</button>
+
+                <button id="saveBtn" class="px-4 py-2 rounded-lg bg-slate-50 text-black font-medium hover:bg-lime-600 active:scale-95 transition">Save</button>
+                
+                </div>
+    </div>
+    <div id="moodHistory" class="hidden journalMainContent bg-lime-300 text-xl flex flex-col gap-4 py-4 px-8 rounded-lg m-4"> Mood History </div>
+    <div id="reflectionsAndPrompts" class="hidden journalMainContent bg-lime-300 text-xl  py-4 px-16 rounded-lg m-4 space-y-4"> 
+         <h2 class="text-2xl font-bold">💭 Emotional Reflection:</h2>
+         <div><p> It’s wonderful to see so many days marked as Happy in your journal.
+These moments suggest you’re experiencing a period of emotional balance, gratitude, or meaningful experiences. When happiness shows up consistently, it often means you’re creating routines, habits, or connections that support your well-being </p></div>
+        <h2 class="text-2xl font-bold">🌱 Gratitude Practic</h2>
+        <div><p> Take a moment to reflect on three things you’re grateful for today. They can be big or small – anything that brings a sense of appreciation to your life. Writing them down can help shift your focus to the positive aspects of your day. </p></div>
+        <h2 class="text-2xl font-bold">🌈 Growth & Mindset </h2>
+        <div><p> Reflect on a recent challenge you faced. How did you approach it, and what did you learn from the experience? Consider how this challenge has contributed to your personal growth and resilience. </p></div>
+    </div>
+    </main>
+</body>
+    
+</html>

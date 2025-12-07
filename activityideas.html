@@ -1,0 +1,187 @@
+    <!DOCTYPE html>
+    <html lang="en">            
+    <head>
+        <link rel="icon" type="image/x-icon" href="/src/iconMindMate.png">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MindMate</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="activityideasscript.js" defer></script>
+        
+    </head>
+    <body class="flex h-screen">
+        <!-- Navigation part-->
+        <div id="menu-placeholder" class="w-96 h-full fixed left-0 top-0 overflow-y-auto">
+            <!-- Menu nav bar -->
+
+        </div>
+        <script src="menu.js"></script>
+    
+        <!-- Main content -->
+        <main class="sm:ml-64 md:ml-96 flex-1 bg-lime-50 overflow-y-auto p-6 space-y-8">
+            <h1 class="text-6xl font-bold text-left">ACTIVITY IDEAS</h1>
+
+            
+        <!-- Buttons -->
+     <div id="button-activities-group"
+    class="flex flex-col sm:flex-row justify-center items-center gap-4 mt-8 w-full text-center">
+
+    <button data-label="Solo Activities"
+        class="activitiesButton flex-1 transition-transform duration-150 bg-lime-300 hover:bg-lime-400 
+        text-lg sm:text-xl font-bold py-3 px-6 rounded-xl w-full max-w-xs h-12 flex items-center justify-center">
+        🌿 Solo Activities
+    </button>
+
+    <button data-label="Group Activities"
+        class="activitiesButton flex-1 transition-transform duration-150 bg-lime-300 hover:bg-lime-400 
+        text-lg sm:text-xl font-bold py-3 px-6 rounded-xl w-full max-w-xs h-12 flex items-center justify-center">
+        🤝 Group Activities
+    </button>
+
+    <button data-label="Sustainable Mindfulness"
+        class="activitiesButton flex-1 transition-transform duration-150 bg-lime-300 hover:bg-lime-400 
+        text-lg sm:text-xl font-bold py-3 px-6 rounded-xl w-full max-w-xs h-12 flex items-center justify-center">
+        🌍 Sustainable Mindfulness
+    </button>
+</div>
+
+
+
+        <!-- SOLO ACTIVITIES -->
+        <div id="soloActivities"
+            class="hidden activitiesContent bg-lime-300 text-xl flex flex-col gap-4 py-4 px-8 rounded-lg m-4">
+        
+            
+            <!-- SOLO ACTIVITY 1 -->
+    <div class="bg-lime-50 rounded-xl p-4 shadow-md flex flex-col gap-2">
+        <h3 class="text-2xl">🧘 Deep Breathing</h3>
+        <p class="text-sm text-gray-700 font-medium">⏱ Duration: 5–10 minutes</p>
+        <p class="text-gray-800">
+            A simple breathing exercise to calm your nervous system and refocus your mind.
+            Perfect when you need a quick reset.
+        </p>
+        <button class="mt-2 w-32 py-2 bg-lime-400 hover:bg-lime-500 rounded-lg text-lg font-semibold">
+            Try now
+        </button>
+    </div>
+
+    <!-- SOLO ACTIVITY 2 -->
+    <div class="bg-lime-50 rounded-xl p-4 shadow-md flex flex-col gap-2">
+        <h3 class="text-2xl">📖 Mindful Reading</h3>
+        <p class="text-sm text-gray-700 font-medium">⏱ Duration: 10–15 minutes</p>
+        <p class="text-gray-800">
+            Choose any short text or book, read slowly, and focus on every sentence without rushing.
+        </p>
+        <button class="mt-2 w-32 py-2 bg-lime-400 hover:bg-lime-500 rounded-lg text-lg font-semibold">
+            Try now
+        </button>
+    </div>
+
+    <!-- SOLO ACTIVITY 3 -->
+    <div class="bg-lime-50 rounded-xl p-4 shadow-md flex flex-col gap-2">
+        <h3 class="text-2xl">🚶 Mindful Walk</h3>
+        <p class="text-sm text-gray-700 font-medium">⏱ Duration: 10 minutes</p>
+        <p class="text-gray-800">
+            Take a slow walk and pay attention to sounds, temperature, and the feeling of movement.
+        </p>
+        <button class="mt-2 w-32 py-2 bg-lime-400 hover:bg-lime-500 rounded-lg text-lg font-semibold">
+            Try now
+        </button>
+    </div>
+
+
+        </div>
+
+        <!-- GROUP ACTIVITIES -->
+        <div id="groupActivities"
+            class="hidden activitiesContent bg-lime-300 text-xl flex flex-col gap-4 py-4 px-8 rounded-lg m-4">
+            
+            <!-- GROUP ACTIVITY 1 -->
+    <div class="bg-lime-50 rounded-xl p-4 shadow-md flex flex-col gap-2">
+        <h3 class="text-2xl">🗣️ Gratitude Circle</h3>
+        <p class="text-sm text-gray-700 font-medium">⏱ Duration: 5–10 minutes</p>
+        <p class="text-gray-800">
+            Each person shares one thing they are grateful for today.  
+            Great for bonding and boosting group mood.
+        </p>
+        <button class="mt-2 w-32 py-2 bg-lime-400 hover:bg-lime-500 rounded-lg text-lg font-semibold">
+            Try now
+        </button>
+    </div>
+
+    <!-- GROUP ACTIVITY 2 -->
+    <div class="bg-lime-50 rounded-xl p-4 shadow-md flex flex-col gap-2">
+        <h3 class="text-2xl">🤸 Stretch Together</h3>
+        <p class="text-sm text-gray-700 font-medium">⏱ Duration: 10 minutes</p>
+        <p class="text-gray-800">
+            Simple guided stretches that everyone can follow to relax muscles and release tension.
+        </p>
+        <button class="mt-2 w-32 py-2 bg-lime-400 hover:bg-lime-500 rounded-lg text-lg font-semibold">
+            Try now
+        </button>
+    </div>
+
+    <!-- GROUP ACTIVITY 3 -->
+    <div class="bg-lime-50 rounded-xl p-4 shadow-md flex flex-col gap-2">
+        <h3 class="text-2xl">🎨 Collaborative Doodle</h3>
+        <p class="text-sm text-gray-700 font-medium">⏱ Duration: 10–15 minutes</p>
+        <p class="text-gray-800">
+            One person starts a drawing, and each participant adds something small.  
+            A fun, creative way to connect.
+        </p>
+        <button class="mt-2 w-32 py-2 bg-lime-400 hover:bg-lime-500 rounded-lg text-lg font-semibold">
+            Try now
+        </button>
+    </div>
+
+        </div>
+
+        <!-- SUSTAINABLE MINDFULNESS -->
+        <div id="sustainableMindfulness"
+            class="hidden activitiesContent bg-lime-300 text-xl flex flex-col gap-4 py-4 px-8 rounded-lg m-4">
+        
+            <!-- SUSTAINABLE ACTIVITY 1 -->
+    <div class="bg-lime-50 rounded-xl p-4 shadow-md flex flex-col gap-2">
+        <h3 class="text-2xl">🌱 Mindful Recycling</h3>
+        <p class="text-sm text-gray-700 font-medium">⏱ Duration: 5 minutes</p>
+        <p class="text-gray-800">
+            Sort your recyclables intentionally and slowly, focusing on your impact on the environment.
+        </p>
+        <button class="mt-2 w-32 py-2 bg-lime-400 hover:bg-lime-500 rounded-lg text-lg font-semibold">
+            Try now
+        </button>
+    </div>
+
+    <!-- SUSTAINABLE ACTIVITY 2 -->
+    <div class="bg-lime-50 rounded-xl p-4 shadow-md flex flex-col gap-2">
+        <h3 class="text-2xl">🌤️ Energy Mindfulness</h3>
+        <p class="text-sm text-gray-700 font-medium">⏱ Duration: 10 minutes</p>
+        <p class="text-gray-800">
+            Walk through your room and mindfully unplug or turn off anything not in use.  
+            Notice how small actions contribute to a healthier planet.
+        </p>
+        <button class="mt-2 w-32 py-2 bg-lime-400 hover:bg-lime-500 rounded-lg text-lg font-semibold">
+            Try now
+        </button>
+    </div>
+
+    <!-- SUSTAINABLE ACTIVITY 3 -->
+    <div class="bg-lime-50 rounded-xl p-4 shadow-md flex flex-col gap-2">
+        <h3 class="text-2xl">🍃 Eco-Breathing Break</h3>
+        <p class="text-sm text-gray-700 font-medium">⏱ Duration: 5–8 minutes</p>
+        <p class="text-gray-800">
+            Sit outside or near a window, breathe deeply, and focus on the natural world around you.
+        </p>
+        <button class="mt-2 w-32 py-2 bg-lime-400 hover:bg-lime-500 rounded-lg text-lg font-semibold">
+            Try now
+        </button>
+    </div>
+
+        </div>
+
+
+        </main>
+    </body>
+        
+    </html>
